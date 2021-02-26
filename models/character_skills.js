@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Character_skills = sequelize.define('Author', {
+    const Character_skills = sequelize.define('Character_skills', {
         char_id_skills: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -32,5 +32,5 @@ module.exports = (sequelize, DataTypes) => {
         });
     };
   
-    return Character_id;
+    return Character_skills;
 };
