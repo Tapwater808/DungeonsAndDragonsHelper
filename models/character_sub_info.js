@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const Character_sub_info = sequelize.define('Author', {
+    const Character_sub_info = sequelize.define('Character_sub_info', {
         char_id_sub: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -18,5 +18,5 @@ module.exports = (sequelize, DataTypes) => {
         });
     };
   
-    return Character_id;
+    return Character_sub_info;
 };
