@@ -13,8 +13,8 @@ module.exports = (app) => {
       }).then((result) => res.json(result))
     }
   })
-//GET route for player name
-  app.get('/api/character/player_name', (req, res) => {
+//GET route for character name
+  app.get('/api/character/character', (req, res) => {
     if (req.params.id) {
       db.Character.findOne({
         where: {
