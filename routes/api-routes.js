@@ -47,4 +47,3 @@ module.exports = (app) => {
       },
     }).then((dbPost) => res.json(dbPost));
   });
-}
