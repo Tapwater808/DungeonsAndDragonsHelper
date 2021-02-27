@@ -3,7 +3,7 @@ const db = require('../models');
 // Routes
 
 module.exports = (app) => {
-//route for getting character sheet
+  //route for getting character sheet
   app.get('/api/character/:id', (req, res) => {
     if (req.params.id) {
       db.Character.findOne({
@@ -13,7 +13,7 @@ module.exports = (app) => {
       }).then((result) => res.json(result))
     }
   })
-//GET route for character name
+  //GET route for character name
   app.get('/api/character/character', (req, res) => {
     if (req.params.id) {
       db.Character.findOne({
@@ -24,27 +24,25 @@ module.exports = (app) => {
     }
   })
 
-    // POST route for saving a character
-    app.post("/api/character/:id", function(req, res) {
-      db.Post.create(req.body).then(function(dbPost) {
-        res.json(dbPost);
-      });
+  // POST route for saving a character
+  app.post("/api/character/:id", function(req, res) {
+    db.Post.create(req.body).then(function(dbPost) {
+      res.json(dbPost);
     });
+  });
 
-//Post route for updating
-    app.put("/api/character/:id", function(req, res) {
-      db.Post.update(
-        req.body,
-        {
-          where: {
-            id: req.body.id
-          }
-        }).then(function(dbPost) {
-        res.json(dbPost);
-      });
+  //Post route for updating
+  app.put("/api/character/:id", function(req, res) {
+    db.Post.update(
+      req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      }).then(function(dbPost) {
+      res.json(dbPost);
     });
-  };
-  
+  });
 
   //route for deleteing characters
   app.delete('/api/posts/:id', (req, res) => {
@@ -54,3 +52,4 @@ module.exports = (app) => {
       },
     }).then((dbPost) => res.json(dbPost));
   });
+};
