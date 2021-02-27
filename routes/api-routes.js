@@ -4,28 +4,35 @@ const db = require('../models');
 
 module.exports = (app) => {
 //route for getting character sheet
-  app.get('/api/char-sheet/:id', (req, res) => {
+  app.get('/api/character/:id', (req, res) => {
     if (req.params.id) {
-      db.Character_id.findOne({
+      db.Character.findOne({
         where: {
           id: req.params.id,
-          include: [
-            {model:db.Character_base_info, attributes:['char_id']},
-            {model:db.Character_sub_info, attributes:['char_id_sub']},
-            {model:db.Character_skills, attributes:['char_id_skills']}
-          ]
         },
       }).then((result) => res.json(result))
     }
   })
+//GET route for character name
+  app.get('/api/character/character', (req, res) => {
+    if (req.params.id) {
+      db.Character.findOne({
+        where: {
+          id: req.params.id,
+        },
+      }).then((result) => res.json(result))
+    }
+  })
+
     // POST route for saving a character
-    app.post("/api/posts/:id", function(req, res) {
+    app.post("/api/character/:id", function(req, res) {
       db.Post.create(req.body).then(function(dbPost) {
         res.json(dbPost);
       });
     });
+
 //Post route for updating
-    app.put("/api/posts/:id", function(req, res) {
+    app.put("/api/character/:id", function(req, res) {
       db.Post.update(
         req.body,
         {
