@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Dungeons & Dragons Helper</title>
 </head>
 <body>
@@ -11,13 +13,16 @@
 
 <button class="startChar">Create a new character</button>
 
-<h3>Already have a character?</h3>
+<h2>Already have a character?</h2>
+<h3>Enter your character code here:</h3>
 
 <form>
-    <label for="charCodeSearch">Enter your character code here:</label>
     <input type="text" id="charCodeSearch" name="charCodeSearch">
 
-    <input type="submit" value="Search">
+    <button type="submit" value="Search" class="button">Search</button>
 </form>
+
+    <!-- Script tag to fix issue of button trasition starting on page load. -->
+    <script> </script>
 </body>
 </html>
