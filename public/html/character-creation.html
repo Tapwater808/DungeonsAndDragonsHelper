@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/character-creation-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Character creation</title>
 </head>
 <body>
     <form>
+        <h1>Character Creation</h1>
         <label for="characterName">Character name:</label>
         <input type="text" id="characterName" name="characterName"><br>
 
@@ -70,7 +73,10 @@
             <option value="tiefling">Tiefling</option>
         </select><br>
 
-        <input type="submit" value="Next">
+        <button type="submit" value="Next">Next</button>
     </form>
+
+    <!-- Script tag to fix issue of button trasition starting on page load. -->
+    <script> </script>
 </body>
 </html>
