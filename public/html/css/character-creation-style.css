@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(0deg, rgb(78, 78, 78), #222);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(131,58,180,1);
+    top: 0;
+}
+
+button {
+    border: 5px solid white;
+    color: rgba(131,58,180,1);
+    background-color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px rgba(131,58,180,1);
+    height: 48px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: rgba(131,58,180,1);
+    color: white;
+}
+
+select, option {
+    color: black;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+form input {
+    border: none;
+    background-color: white;
+    height: 47px;
+    width: 25%;
+    padding-top: 1px;
+    box-shadow: 10px 10px rgba(131,58,180,1);
+    margin-top: 20px;
+}
+
+form select {
+    border: none;
+    background-color: white;
+    height: 47px;
+    padding-top: 1px;
+    box-shadow: 10px 10px rgba(131,58,180,1);
+}
+
+form {
+    margin-top: 10px;
+}
