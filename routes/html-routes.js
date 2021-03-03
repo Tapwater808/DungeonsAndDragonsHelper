@@ -9,7 +9,7 @@ module.exports = (app) => {
 
     // Char Creation
     app.get('/creation', (req, res) =>
-        res.sendFile(path.join(__dirname, '../public/html/char-creation.html'))
+        res.sendFile(path.join(__dirname, '../public/html/character-creation.html'))
     );
 
     // Stats Page
@@ -19,7 +19,7 @@ module.exports = (app) => {
 
     // Proficiencies page
     app.get('/prof', (req, res) =>
-        res.sendFile(path.join(__dirname, '../public/html/prof.html'))
+        res.sendFile(path.join(__dirname, '../public/html/proficiencies.html'))
     );
 
     // Char Sheet page
