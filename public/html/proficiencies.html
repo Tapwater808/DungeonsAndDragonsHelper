@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/character-creation-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Dungeons & Dragons Helper</title>
+</head>
+<body>
+    <h1>Proficiencies</h1>
+
+    <h2>Select <span class="class-proficiency-num"></span> proficiencies:</h2>
+
+    <form>
+        <div class="barbarian-profs">
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival">
+        </div>
+
+        <div class="bard-profs">
+            <label for="acrobatics">Acrobatics</label>
+            <input type="checkbox" id="acrobatics" name="acrobatics">
+
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling">
+
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="deception">Deception</label>
+            <input type="checkbox" id="deception" name="deception">
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine">
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="performance">Performance</label>
+            <input type="checkbox" id="performance" name="performance">
+
+            <label for="persuasion">Persuasion</label>
+            <input type="checkbox" id="persuasion" name="persuasion">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+
+            <label for="sleight-of-hand">Sleight Of Hand</label>
+            <input type="checkbox" id="sleight-of-hand" name="sleight-of-hand">
+
+            <label for="stealth">Stealth</label>
+            <input type="checkbox" id="stealth" name="stealth">
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival">
+        </div>
+
+        <div class="cleric-profs">
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine">
+
+            <label for="persuasion">Persuasion</label>
+            <input type="checkbox" id="persuasion" name="persuasion">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+        </div>
+
+        <div class="druid-profs">
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling">
+
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine">
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival">
+        </div>
+
+        <div class="fighter-profs">
+            <label for="acrobatics">Acrobatics</label>
+            <input type="checkbox" id="acrobatics" name="acrobatics">
+
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival">
+        </div>
+
+        <div class="monk-profs">
+            <label for="acrobatics">Acrobatics</label>
+            <input type="checkbox" id="acrobatics" name="acrobatics">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+
+            <label for="stealth">Stealth</label>
+            <input type="checkbox" id="stealth" name="stealth">
+        </div>
+
+        <div class="paladin-profs">
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine">
+
+            <label for="persuasion">Persuasion</label>
+            <input type="checkbox" id="persuasion" name="persuasion">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+        </div>
+
+        <div class="ranger-profs">
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="stealth">Stealth</label>
+            <input type="checkbox" id="stealth" name="stealth">
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival">
+        </div>
+
+        <div class="rogue-profs">
+            <label for="acrobatics">Acrobatics</label>
+            <input type="checkbox" id="acrobatics" name="acrobatics">
+
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" id="athletics" name="athletics">
+
+            <label for="deception">Deception</label>
+            <input type="checkbox" id="deception" name="deception">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception">
+
+            <label for="performance">Performance</label>
+            <input type="checkbox" id="performance" name="performance">
+
+            <label for="persuasion">Persuasion</label>
+            <input type="checkbox" id="persuasion" name="persuasion">
+
+            <label for="sleight-of-hand">Sleight Of Hand</label>
+            <input type="checkbox" id="sleight-of-hand" name="sleight-of-hand">
+
+            <label for="stealth">Stealth</label>
+            <input type="checkbox" id="stealth" name="stealth">
+        </div>
+
+        <div class="sorcerer-profs">
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana">
+
+            <label for="deception">Deception</label>
+            <input type="checkbox" id="deception" name="deception">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="persuasion">Persuasion</label>
+            <input type="checkbox" id="persuasion" name="persuasion">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+        </div>
+
+        <div class="warlock-profs">
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana">
+
+            <label for="deception">Deception</label>
+            <input type="checkbox" id="deception" name="deception">
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+        </div>
+
+        <div class="wizard-profs">
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana">
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history">
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight">
+
+            <label for="intimidation">Intimidation</label>
+            <input type="checkbox" id="intimidation" name="intimidation">
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation">
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine">
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion">
+        </div>
+    
+        <button type="submit" value="Next">Next</button>
+    </form>
+
+    <!-- Script tag to fix issue of button trasition starting on page load. -->
+    <script> </script>
+</body>
+</html>
