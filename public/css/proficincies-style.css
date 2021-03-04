@@ -26,6 +26,10 @@ h1 {
     top: 0;
 }
 
+h2 {
+    margin-left: 10px;
+}
+
 button {
     border: 5px solid white;
     color: rgba(131,58,180,1);
@@ -64,22 +68,13 @@ label {
 form input {
     border: none;
     background-color: white;
-    height: 47px;
-    width: 25%;
-    padding-top: 1px;
+    height: 40px;
+    width: 40px;
     box-shadow: 10px 10px rgba(131,58,180,1);
-    margin-top: 20px;
-    color: black;
-    padding-left: 10px;
-    font-size: 25px;
-}
-
-form select {
-    border: none;
-    background-color: white;
-    height: 47px;
-    padding-top: 1px;
-    box-shadow: 10px 10px rgba(131,58,180,1);
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
 }
 
 form {
