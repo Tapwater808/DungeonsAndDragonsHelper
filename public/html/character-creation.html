@@ -9,7 +9,7 @@
     <title>Character creation</title>
 </head>
 <body>
-    <form>
+    <form id="dataForm">
         <h1>Character Creation</h1>
         <label for="characterName">Character name:</label>
         <input type="text" id="characterName" name="characterName"><br>
@@ -57,8 +57,8 @@
             <option value="lv20">20</option>
         </select><br>
 
-        <label for="">Select your race:</label>
-        <select id="">
+        <label for="raceSelect">Select your race:</label>
+        <select id="raceSelect">
             <option value="hill-dwarf">Hill Dwarf</option>
             <option value="mountain-dwarf">Mountain Dwarf</option>
             <option value="high-elf">High Elf</option>
@@ -85,9 +85,10 @@
 
     </form>
     
-    <button onclick = "window.location.href='/stats'" value="Next">Next</button>
+    <button id= "submit-creation" type="submit">Next</button>
 
     <!-- Script tag to fix issue of button trasition starting on page load. -->
-    <script> </script>
+    <script src="../js/script.js" type="text/javascript"> </script>
+    <script src="../js/creation.js" type="text/javascript"></script>
 </body>
 </html>

@@ -13,8 +13,8 @@
 
     <h2>Select <span class="class-proficiency-num"></span> proficiencies:</h2>
 
-    <form>
-        <div class="barbarian-profs">
+    <form id="dataForm">
+        <div class="barbarian-profs" display = 'none'>
             <label for="animal-handling">Animal Handling</label>
             <input type="checkbox" id="animal-handling" name="animal-handling"><br>
 
@@ -34,7 +34,7 @@
             <input type="checkbox" id="survival" name="survival"><br>
         </div>
 
-        <div class="bard-profs">
+        <div class="bard-profs" display = 'none'>
             <label for="acrobatics">Acrobatics</label>
             <input type="checkbox" id="acrobatics" name="acrobatics"><br>
 
@@ -90,7 +90,7 @@
             <input type="checkbox" id="survival" name="survival"><br>
         </div>
 
-        <div class="cleric-profs">
+        <div class="cleric-profs" display = 'none'>
             <label for="history">History</label>
             <input type="checkbox" id="history" name="history"><br>
 
@@ -107,7 +107,7 @@
             <input type="checkbox" id="religion" name="religion"><br>
         </div>
 
-        <div class="druid-profs">
+        <div class="druid-profs" display = 'none'>
             <label for="animal-handling">Animal Handling</label>
             <input type="checkbox" id="animal-handling" name="animal-handling"><br>
 
@@ -133,7 +133,7 @@
             <input type="checkbox" id="survival" name="survival"><br>
         </div>
 
-        <div class="fighter-profs">
+        <div class="fighter-profs" display = 'none'>
             <label for="acrobatics">Acrobatics</label>
             <input type="checkbox" id="acrobatics" name="acrobatics"><br>
 
@@ -159,7 +159,7 @@
             <input type="checkbox" id="survival" name="survival"><br>
         </div>
 
-        <div class="monk-profs">
+        <div class="monk-profs" display = 'none'>
             <label for="acrobatics">Acrobatics</label>
             <input type="checkbox" id="acrobatics" name="acrobatics"><br>
 
@@ -179,7 +179,7 @@
             <input type="checkbox" id="stealth" name="stealth"><br>
         </div>
 
-        <div class="paladin-profs">
+        <div class="paladin-profs" display = 'none'>
             <label for="athletics">Athletics</label>
             <input type="checkbox" id="athletics" name="athletics"><br>
 
@@ -202,7 +202,7 @@
             <input type="checkbox" id="religion" name="religion"><br>
         </div>
 
-        <div class="ranger-profs">
+        <div class="ranger-profs" display = 'none'>
             <label for="animal-handling">Animal Handling</label>
             <input type="checkbox" id="animal-handling" name="animal-handling"><br>
 
@@ -228,7 +228,7 @@
             <input type="checkbox" id="survival" name="survival"><br>
         </div>
 
-        <div class="rogue-profs">
+        <div class="rogue-profs" display = 'none'>
             <label for="acrobatics">Acrobatics</label>
             <input type="checkbox" id="acrobatics" name="acrobatics"><br>
 
@@ -263,7 +263,7 @@
             <input type="checkbox" id="stealth" name="stealth"><br>
         </div>
 
-        <div class="sorcerer-profs">
+        <div class="sorcerer-profs" display = 'none'>
             <label for="arcana">Arcana</label>
             <input type="checkbox" id="arcana" name="arcana"><br>
 
@@ -283,7 +283,7 @@
             <input type="checkbox" id="religion" name="religion"><br>
         </div>
 
-        <div class="warlock-profs">
+        <div class="warlock-profs" display = 'none'>
             <label for="arcana">Arcana</label>
             <input type="checkbox" id="arcana" name="arcana"><br>
 
@@ -306,7 +306,7 @@
             <input type="checkbox" id="religion" name="religion"><br>
         </div>
 
-        <div class="wizard-profs">
+        <div class="wizard-profs" display = 'none'>
             <label for="arcana">Arcana</label>
             <input type="checkbox" id="arcana" name="arcana"><br>
 
@@ -331,11 +331,12 @@
 
     </form>
 
-    <button onclick = "window.location.href='/char-sheet'" type="submit" value="Next">Next</button>
+    <button id="submit-prof" type="submit">Next</button>
 
     <h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2><h2>I've been banned from Dave and Busters</h2>
 
     <!-- Script tag to fix issue of button trasition starting on page load. -->
-    <script> </script>
+    <script src="../js/script.js" type="text/javascript"> </script>
+    <script src="../js/prof.js" type="text/javascript"> </script>
 </body>
 </html>
