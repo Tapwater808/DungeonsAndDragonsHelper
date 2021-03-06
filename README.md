@@ -28,6 +28,10 @@ Once the character has been created, they will be taken to their character sheet
 
 !['']()
 
+If a character needs a spell, the player can select a spell on our spell sheet. There are explanations of each spell listed in alphabetical order.
+
+!['']()
+
 ## Code
 
 ## Future Updates
