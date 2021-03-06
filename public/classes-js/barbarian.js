@@ -5,16 +5,14 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
 
     const newChar = JSON.parse(window.localStorage.getItem('new-char'))
     
+    newChar.animalHandling = document.getElementById('animal-handling').checked,
     newChar.athletics = document.getElementById('athletics').checked,
-    newChar.insight = document.getElementById('insight').checked,
     newChar.intimidation = document.getElementById('intimidation').checked,
-    newChar.investigation = document.getElementById('investigation').checked,
-    newChar.medicine = document.getElementById('medicine').checked,
-    newChar.persuasion = document.getElementById('persuasion').checked,
-    newChar.religion = document.getElementById('religion').checked,
+    newChar.nature = document.getElementById('nature').checked,
+    newChar.perception = document.getElementById('perception').checked,
+    newChar.survival = document.getElementById('survival').checked,
 
-    window.localStorage.setItem('new-char', JSON.stringify(newChar))
-    
+    window.localStorage.setItem('new-char', JSON.stringify(newChar))    
     await fetch("/api/character", {
         method: "POST",
         headers: {
@@ -22,6 +20,5 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
         },
         body: JSON.stringify(newChar)
     })
-    window.localStorage.removeItem('new-char')
     window.location.href='/char-sheet'
 })

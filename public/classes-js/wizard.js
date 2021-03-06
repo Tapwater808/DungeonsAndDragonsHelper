@@ -5,14 +5,12 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
 
     const newChar = JSON.parse(window.localStorage.getItem('new-char'))
     
-    newChar.animalHandling = document.getElementById('animal-handling').checked,
-    newChar.athletics = document.getElementById('athletics').checked,
+    newChar.arcana = document.getElementById('arcana').checked,
+    newChar.history = document.getElementById('history').checked,
     newChar.insight = document.getElementById('insight').checked,
     newChar.investigation = document.getElementById('investigation').checked,
-    newChar.nature = document.getElementById('nature').checked,
-    newChar.perception = document.getElementById('perception').checked,
-    newChar.stealth = document.getElementById('stealth').checked,
-    newChar.survival = document.getElementById('survival').checked,
+    newChar.medicine = document.getElementById('medicine').checked,
+    newChar.religion = document.getElementById('religion').checked,
 
     window.localStorage.setItem('new-char', JSON.stringify(newChar))
     
@@ -23,6 +21,5 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
         },
         body: JSON.stringify(newChar)
     })
-    window.localStorage.removeItem('new-char')
     window.location.href='/char-sheet'
 })
