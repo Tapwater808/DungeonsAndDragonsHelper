@@ -12,8 +12,7 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
     newChar.perception = document.getElementById('perception').checked,
     newChar.survival = document.getElementById('survival').checked,
 
-    window.localStorage.setItem('new-char', JSON.stringify(newChar))
-    
+    window.localStorage.setItem('new-char', JSON.stringify(newChar))    
     await fetch("/api/character", {
         method: "POST",
         headers: {

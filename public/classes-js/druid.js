@@ -23,6 +23,9 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
         },
         body: JSON.stringify(newChar)
     })
+<<<<<<< HEAD:public/js/classes-js/druid.js
     // window.localStorage.removeItem('new-char')
+=======
+>>>>>>> 42d931baea846a2c1817211b66dec9d0132b6fc4:public/classes-js/druid.js
     window.location.href='/char-sheet'
 })
