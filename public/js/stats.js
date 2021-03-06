@@ -11,5 +11,5 @@ document.getElementById('submit-stats').addEventListener('click', (event) => {
     newChar.charisma = document.getElementById('charisma').value,
 
     window.localStorage.setItem('new-char', JSON.stringify(newChar))
-    window.location.href='/prof'
+    window.location.href='/prof/'
 });
