@@ -30,5 +30,3 @@ document.getElementById("char-deception").innerHTML += newChar.deception;
 document.getElementById("char-intimidation").innerHTML += newChar.intimidation;
 document.getElementById("char-performance").innerHTML += newChar.performance;
 document.getElementById("char-persuasion").innerHTML += newChar.persuasion;
-
-window.localStorage.removeItem('new-char')
