@@ -59,6 +59,10 @@ h3 {
     color: black;
 }
 
+.spell-button {
+    margin-top: 20px;
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
