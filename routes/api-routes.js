@@ -28,43 +28,42 @@ module.exports = (app) => {
   // POST route for saving a character
   app.post("/api/character", (req, res) => {
     console.log("We got: ", req.body);
-    // db.Character.create({
+    db.Character.create({
 
-    //   player_name: req.body.playerName,
-    //   char_name: req.body.characterName,
-    //   strength: req.body.strength,
-    //   dexterity: req.body.dexterity,
-    //   constitution: req.body.constitution,
-    //   intelligence: req.body.intelligence,
-    //   wisdom: req.body.wisdom,
-    //   charisma: req.body.charisma,
-    //   class: req.body.classMenu,
-    //   level: req.body.levelSelect,
-    //   background: req.body.backgroundSelect,
-    //   race: req.body.raceSelect,
-    //   acrobatics: req.body.acrobatics,
-    //   animal_handling: req.body.animal-handling,
-    //   arcana: req.body.arcana,
-    //   athletics: req.body.athletics,
-    //   deception: req.body.deception,
-    //   history: req.body.history,
-    //   insight: req.body.insight,
-    //   intimidation: req.body.intimidation,
-    //   investigation: req.body.investigation,
-    //   medicine: req.body.medicine,
-    //   nature: req.body.nature,
-    //   perception: req.body.perception,
-    //   performance: req.body.performance,
-    //   persuasion: req.body.persuasion,
-    //   religion: req.body.religion,
-    //   sleight_of_hand: req.body.sleight_of_hand,
-    //   stealth: req.body.stealth,
-    //   survival: req.body.survival,      
+      player_name: req.body.playerName,
+      char_name: req.body.characterName,
+      strength: req.body.strength,
+      dexterity: req.body.dexterity,
+      constitution: req.body.constitution,
+      intelligence: req.body.intelligence,
+      wisdom: req.body.wisdom,
+      charisma: req.body.charisma,
+      class: req.body.classMenu,
+      level: req.body.levelSelect,
+      background: req.body.backgroundSelect,
+      race: req.body.raceSelect,
+      acrobatics: req.body.acrobatics,
+      animal_handling: req.body.animalHandling,
+      arcana: req.body.arcana,
+      athletics: req.body.athletics,
+      deception: req.body.deception,
+      history: req.body.history,
+      insight: req.body.insight,
+      intimidation: req.body.intimidation,
+      investigation: req.body.investigation,
+      medicine: req.body.medicine,
+      nature: req.body.nature,
+      perception: req.body.perception,
+      performance: req.body.performance,
+      persuasion: req.body.persuasion,
+      religion: req.body.religion,
+      sleight_of_hand: req.body.sleight_of_hand,
+      stealth: req.body.stealth,
+      survival: req.body.survival,      
 
-    // }).then((result) => {
-    //   res.json(result);
-    // });
-    res.json(req.body);
+    }).then((result) => {
+      res.json(result);
+    });
   });
 
   //Post route for updating

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/proficincies-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Dungeons & Dragons Helper</title>
+</head>
+<body>
+    <h1>Proficiencies</h1>
+
+    <!--step 1: dont do prof by class, just list all profs step 2: list all clasess step 3 hide all profs that class doesnt have -->
+
+    <h2>Select <span class="class-proficiency-num"></span> proficiencies:</h2>
+
+    <form id="dataForm">
+
+        <div class="druid-profs">
+            <label for="animal-handling">Animal Handling</label>
+            <input type="checkbox" id="animal-handling" name="animal-handling"><br>
+
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana"><br>
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight"><br>
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine"><br>
+
+            <label for="nature">Nature</label>
+            <input type="checkbox" id="nature" name="nature"><br>
+
+            <label for="perception">Perception</label>
+            <input type="checkbox" id="perception" name="perception"><br>
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion"><br>
+
+            <label for="survival">Survival</label>
+            <input type="checkbox" id="survival" name="survival"><br>
+            
+        </div>
+
+    </form>
+
+    <button id="submit-prof" type="submit">Next</button>
+
+    <!-- Script tag to fix issue of button trasition starting on page load. -->
+    <script src="../js/classes-js/druid.js" type="text/javascript"> </script>
+</body>
+</html>

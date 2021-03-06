@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/proficincies-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Dungeons & Dragons Helper</title>
+</head>
+<body>
+    <h1>Proficiencies</h1>
+
+    <!--step 1: dont do prof by class, just list all profs step 2: list all clasess step 3 hide all profs that class doesnt have -->
+
+    <h2>Select <span class="class-proficiency-num"></span> proficiencies:</h2>
+
+    <form id="dataForm">
+
+        <div class="wizard-profs" display = 'none'>
+            <label for="arcana">Arcana</label>
+            <input type="checkbox" id="arcana" name="arcana"><br>
+
+            <label for="history">History</label>
+            <input type="checkbox" id="history" name="history"><br>
+
+            <label for="insight">Insight</label>
+            <input type="checkbox" id="insight" name="insight"><br>
+
+            <label for="investigation">Investigation</label>
+            <input type="checkbox" id="investigation" name="investigation"><br>
+
+            <label for="medicine">Medicine</label>
+            <input type="checkbox" id="medicine" name="medicine"><br>
+
+            <label for="religion">Religion</label>
+            <input type="checkbox" id="religion" name="religion"><br>
+        </div>
+
+    </form>
+
+    <button id="submit-prof" type="submit">Next</button>
+
+    <!-- Script tag to fix issue of button trasition starting on page load. -->
+    <script src="../js/classes-js/wizard.js" type="text/javascript"> </script>
+</body>
+</html>
