@@ -18,8 +18,52 @@ module.exports = (app) => {
     );
 
     // Proficiencies page
-    app.get('/prof', (req, res) =>
-        res.sendFile(path.join(__dirname, '../public/html/proficiencies.html'))
+    app.get('/prof/barbarian', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/barbarian.html'))
+    );
+
+    app.get('/prof/bard', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/bard.html'))
+    );
+
+    app.get('/prof/cleric', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/cleric.html'))
+    );
+
+    app.get('/prof/druid', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/druid.html'))
+    );
+
+    app.get('/prof/fighter', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/fighter.html'))
+    );
+
+    app.get('/prof/monk', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/monk.html'))
+    );
+
+    app.get('/prof/paladin', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/paladin.html'))
+    );
+
+    app.get('/prof/ranger', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/ranger.html'))
+    );
+
+    app.get('/prof/rogue', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/rogue.html'))
+    );
+
+    app.get('/prof/sorcerer', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/sorcerer.html'))
+    );
+
+    app.get('/prof/warlock', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/warlock.html'))
+    );
+
+    app.get('/prof/wizard', (req, res) =>
+        res.sendFile(path.join(__dirname, '../public/classes-html/wizard.html'))
     );
 
     // Char Sheet page

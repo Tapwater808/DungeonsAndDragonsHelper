@@ -5,17 +5,14 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
 
     const newChar = JSON.parse(window.localStorage.getItem('new-char'))
     
-    newChar.acrobatics = document.getElementById('acrobatics').checked,
+    newChar.animalHandling = document.getElementById('animal-handling').checked,
     newChar.athletics = document.getElementById('athletics').checked,
-    newChar.deception = document.getElementById('deception').checked,
     newChar.insight = document.getElementById('insight').checked,
-    newChar.intimidation = document.getElementById('intimidation').checked,
     newChar.investigation = document.getElementById('investigation').checked,
+    newChar.nature = document.getElementById('nature').checked,
     newChar.perception = document.getElementById('perception').checked,
-    newChar.performance = document.getElementById('performance').checked,
-    newChar.persuasion = document.getElementById('persuasion').checked,
-    newChar.sleightOfHand = document.getElementById('sleight-of-hand').checked,
     newChar.stealth = document.getElementById('stealth').checked,
+    newChar.survival = document.getElementById('survival').checked,
 
     window.localStorage.setItem('new-char', JSON.stringify(newChar))
     
@@ -26,6 +23,5 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
         },
         body: JSON.stringify(newChar)
     })
-    window.localStorage.removeItem('new-char')
     window.location.href='/char-sheet'
 })
