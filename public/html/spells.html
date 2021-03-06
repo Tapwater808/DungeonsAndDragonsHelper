@@ -11,7 +11,7 @@
 <body>
     <h1>Spells</h1>
 
-    <button type="button">Character Sheet</button><br>
+    <button onclick = "window.location.href='/char-sheet'" class="button">Back to Character Sheet</button>
 
     <label for="sort-class">Sort by class:</label>
     <select id="sort-class">
@@ -44,9 +44,6 @@
     <button id="spell-search" type="button">Sort Spells</button>
 
     <div id="all-spells"></div>
-
-    <!-- Script tag to fix issue of button trasition starting on page load. -->
-    <script> </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/spell-script.js"></script>
