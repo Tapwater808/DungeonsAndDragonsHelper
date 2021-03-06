@@ -15,14 +15,14 @@ To install this app, the player will need to go to the webpage listed below and 
 
 Once the player goes to the webpage, they will be prompted by a start button to begin character creation. If they have already created a character, they can then search for the character by the ID given to them at the end of character creation.
 
-!['']()
-!['']()
+!['Homepage'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/homepage.png)
 
 The start button connects them to the Character Creation page where they can select their specicies, class, name, and much more. They then can continue onto the Stats page and the proficiencies page.
 
-!['']()
-!['']()
-!['']()
+!['Creation'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/creation.png)
+!['Dropdown Example'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/dropdown-example.png)
+!['Stats'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/stats.png)
+!['Prof'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/prof-page.png)
 
 Once the character has been created, they will be taken to their character sheet which is generated based off of the selections they made.
 
