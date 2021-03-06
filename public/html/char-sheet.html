@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/char-sheet-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Character Sheet</title>
 </head>
 <body>
-    
+    <h1>Character Sheet</h1>
+
     <!-- Tavern Music Buttons. -->
     <div class="container">
         <audio id="myAudio">
@@ -16,10 +19,12 @@
             Your browser does not support the audio element.
           </audio>
           
-          <p>Click the buttons to play some tavern music.</p>
+          <h2>Click the buttons to play some tavern music.</h2><br>
           
-          <button onclick="playAudio()" type="button">Play</button>
-          <button onclick="pauseAudio()" type="button">Pause</button> 
+          <div class="buttons-container">
+            <button onclick="playAudio()" type="button">Play</button>
+            <button onclick="pauseAudio()" type="button">Pause</button> 
+          </div>
           
           <script>
           var x = document.getElementById("myAudio"); 
@@ -34,126 +39,143 @@
           </script>
           
     </div>
-    <h1>Character Sheet</h1>
 
-    <div class="code">
-        <h3>Character Code:</h3>
-        <div class="charCode"></div>
+    <!-- <div class="centered">
+        <div class="code">
+            <h3>Character Code:</h3>
+            <div class="charCode"></div>
+        </div>
+    </div> -->
+
+    <div class="centered">
+        <div class="hp-container">
+            <h3>HP:</h3>
+            <input class="hp"></input>
+        </div>
     </div>
 
+
     <div class="character-info">
-        <h3>Name:</h3>
-        <div class="char_name"></div>
-        <h3>Player Name:</h3>
-        <div class="player_name"></div>
-        <h3>Class:</h3>
-        <div class="char_class"></div>
-        <div class="char_subclass"></div>
-        <h3>Level:</h3>
-        <div class="char_level"></div>
-        <h3>Race:</h3>
-        <div class="char_race"></div>
-        <div class="char_subrace"></div>
-        <h3>Background:</h3>
-        <div class="char_background"></div>
+        <div class="info-container">
+            <div class="info-block">
+                <h3>Name:</h3>
+                <div class="char_name"></div>
+            </div>
+            <div class="info-block">
+                <h3>Player Name:</h3>
+                <div class="player_name"></div>
+            </div>
+            <div class="info-block">
+                <h3>Class:</h3>
+                <div class="char_class"></div>
+                <div class="char_subclass"></div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="info-block">
+                <h3>Level:</h3>
+                <div class="char_level"></div>
+            </div>
+            <div class="info-block">
+                <h3>Race:</h3>
+                <div class="char_race"></div>
+                <div class="char_subrace"></div>
+            </div>
+            <div class="info-block">
+                <h3>Background:</h3>
+                <div class="char_background"></div>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="stats">
-        <div class="strength">
-            <h3>Strength</h3>
-            <div class="char_strength"></div>
-
-            <div class="strength_saving"></div>
-
-            <h3>Athletics</h3>
-            <div class="char_athletics"></div>
+        <div class="info-container">
+            <div class="strength stat-block">
+                <h3>Strength</h3>
+                <div class="char_strength main-stat"></div>
+    
+                <div class="strength_saving"></div>
+    
+                <h3>Athletics</h3>
+                <div class="char_athletics sub-stat"></div>
+            </div>
+    
+            <div class="dexterity stat-block">
+                <h3>Dexterity</h3>
+                <div class="char_dexterity main-stat"></div>
+    
+                <div class="dexterity_saving"></div>
+    
+                <h3>Acrobatics</h3>
+                <div class="char_acrobatics sub-stat"></div>
+                <h3>Sleight of Hand</h3>
+                <div class="char_sleight_of_hand sub-stat"></div>
+                <h3>Stealth</h3>
+                <div class="char_stealth sub-stat"></div>
+            </div>
+    
+            <div class="constitution stat-block">
+                <h3>Constitution</h3>
+                <div class="char_constitution main-stat"></div>
+    
+                <div class="constitution_saving"></div>
+            </div>
         </div>
-
-        <div class="dexterity">
-            <h3>Dexterity</h3>
-            <div class="char_dexterity"></div>
-
-            <div class="dexterity_saving"></div>
-
-            <h3>Acrobatics</h3>
-            <div class="char_acrobatics"></div>
-            <h3>Sleight of Hand</h3>
-            <div class="char_sleight_of_hand"></div>
-            <h3>Stealth</h3>
-            <div class="char_stealth"></div>
+        <div class="info-container">
+            <div class="intelligence stat-block">
+                <h3>Intelligence</h3>
+                <div class="char_intelligence main-stat"></div>
+    
+                <div class="intelligence_saving"></div>
+    
+                <h3>Arcana</h3>
+                <div class="char_arcana sub-stat"></div>
+                <h3>History</h3>
+                <div class="char_history sub-stat"></div>
+                <h3>Investigation</h3>
+                <div class="char_investigation sub-stat"></div>
+                <h3>Nature</h3>
+                <div class="char_nature sub-stat"></div>
+                <h3>Religion</h3>
+                <div class="char_religion sub-stat"></div>
+            </div>
+    
+            <div class="wisdom stat-block">
+                <h3>Wisdom</h3>
+                <div class="char_wisdom main-stat"></div>
+    
+                <div class="wisdom_saving"></div>
+    
+                <h3>Animal Handling</h3>
+                <div class="char_animal_handling sub-stat"></div>
+                <h3>Insight</h3>
+                <div class="char_insight sub-stat"></div>
+                <h3>Medicine</h3>
+                <div class="char_medicine sub-stat"></div>
+                <h3>Perception</h3>
+                <div class="char_perception sub-stat"></div>
+                <h3>Survival</h3>
+                <div class="char_survival sub-stat"></div>
+            </div>
+    
+            <div class="charisma stat-block">
+                <h3>Charisma</h3>
+                <div class="char_charisma main-stat"></div>
+    
+                <div class="charisma_saving"></div>
+    
+                <h3>Deception</h3>
+                <div class="char_deception sub-stat"></div>
+                <h3>Intimidation</h3>
+                <div class="char_intimidation sub-stat"></div>
+                <h3>Intimidation</h3>
+                <div class="char_performance sub-stat"></div>
+                <h3>Persuasion</h3>
+                <div class="char_persuasion sub-stat"></div>
+            </div>
         </div>
-
-        <div class="constitution">
-            <h3>Constitution</h3>
-            <div class="char_constitution"></div>
-
-            <div class="constitution_saving"></div>
-        </div>
-
-        <div class="intelligence">
-            <h3>Intelligence</h3>
-            <div class="char_intelligence"></div>
-
-            <div class="intelligence_saving"></div>
-
-            <h3>Arcana</h3>
-            <div class="char_arcana"></div>
-            <h3>History</h3>
-            <div class="char_history"></div>
-            <h3>Investigation</h3>
-            <div class="char_investigation"></div>
-            <h3>Nature</h3>
-            <div class="char_nature"></div>
-            <h3>Religion</h3>
-            <div class="char_religion"></div>
-        </div>
-
-        <div class="wisdom">
-            <h3>Wisdom</h3>
-            <div class="char_wisdom"></div>
-
-            <div class="wisdom_saving"></div>
-
-            <h3>Animal Handling</h3>
-            <div class="char_animal_handling"></div>
-            <h3>Insight</h3>
-            <div class="char_insight"></div>
-            <h3>Medicine</h3>
-            <div class="char_medicine"></div>
-            <h3>Perception</h3>
-            <div class="char_perception"></div>
-            <h3>Survival</h3>
-            <div class="char_survival"></div>
-        </div>
-
-        <div class="charisma">
-            <h3>Charisma</h3>
-            <div class="char_charisma"></div>
-
-            <div class="charisma_saving"></div>
-
-            <h3>Deception</h3>
-            <div class="char_deception"></div>
-            <h3>Intimidation</h3>
-            <div class="char_intimidation"></div>
-            <h3>Intimidation</h3>
-            <div class="char_performance"></div>
-            <h3>Persuasion</h3>
-            <div class="char_persuasion"></div>
-        </div>
-    </div>
-
-    <div class="other-info">
-        <h3>Passive Perception (Wisdom)</h3>
-        <div class="char_passive_wisdom"></div>
-        <h3>Speed</h3>
-        <div class="char_speed"></div>
-        <h3>Initiative</h3>
-        <div class="char_initiative"></div>
-        <h3>HP</h3>
-        <div class="char_hp"></div>
-        <h3>Hit Dice</h3>
-        <div class="char_hit_dice"></div>
     </div>
 </body>
 </html>
