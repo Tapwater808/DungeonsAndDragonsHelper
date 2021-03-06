@@ -23,6 +23,6 @@ document.getElementById('submit-prof').addEventListener('click', async (event) =
         },
         body: JSON.stringify(newChar)
     })
-    window.localStorage.removeItem('new-char')
+        // window.localStorage.removeItem('new-char')
     window.location.href='/char-sheet'
 })
