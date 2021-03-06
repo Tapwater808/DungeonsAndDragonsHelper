@@ -11,57 +11,44 @@
 <body>
     <h1>Spells</h1>
 
+    <button type="button">Character Sheet</button><br>
+
     <label for="sort-class">Sort by class:</label>
     <select id="sort-class">
-        <option value="bard-spells">Bard</option>
-        <option value="cleric-spells">Cleric</option>
-        <option value="druid-spells">Druid</option>
-        <option value="paladin-spells">Paladin</option>
-        <option value="ranger-spells">Ranger</option>
-        <option value="sorcerer-spells">Sorcerer</option>
-        <option value="warlock-spells">Warlock</option>
-        <option value="wizard-spells">Wizard</option>
+        <option value="null"></option>
+        <option value="bard">Bard</option>
+        <option value="cleric">Cleric</option>
+        <option value="druid">Druid</option>
+        <option value="paladin">Paladin</option>
+        <option value="ranger">Ranger</option>
+        <option value="sorcerer">Sorcerer</option>
+        <option value="warlock">Warlock</option>
+        <option value="wizard">Wizard</option>
     </select><br>
 
     <label for="sort-level">Sort by spell level:</label>
     <select id="sort-level">
-        <option value="spell-lv1">1</option>
-        <option value="spell-lv2">2</option>
-        <option value="spell-lv3">3</option>
-        <option value="spell-lv4">4</option>
-        <option value="spell-lv5">5</option>
-        <option value="spell-lv6">6</option>
-        <option value="spell-lv7">7</option>
-        <option value="spell-lv8">8</option>
-        <option value="spell-lv9">9</option>
-    </select>
+        <option value="null"></option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select><br>
 
-    <div class="spell-box">
-        <div class="spell-name"></div>
+    <button id="spell-search" type="button">Sort Spells</button>
 
-        <label for="spell-save">Save spell to list:</label>
-        <input type="checkbox" id="spell-save" name="spell-save">
-
-        <div class="spell-description"></div>
-        <h3>At higher levels:</h3>
-        <div class="spell-higher-level"></div>
-
-        <h3>Range:</h3>
-        <div class="spell-range"></div>
-        <h3>Duration:</h3>
-        <div class="spell-duration"></div>
-        <h3>Casting Time:</h3>
-        <div class="spell-casting-time"></div>
-        <h3>Spell Level:</h3>
-        <div class="spell-level"></div>
-        <h3>Components:</h3>
-        <div class="spell-components"></div>
-    </div>
-
-    <button type="button">Character Sheet</button>
-    <button type="button">Spell List</button>
+    <div id="all-spells"></div>
 
     <!-- Script tag to fix issue of button trasition starting on page load. -->
     <script> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/spell-script.js"></script>
 </body>
 </html>
