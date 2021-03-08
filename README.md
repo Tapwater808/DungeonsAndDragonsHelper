@@ -6,7 +6,7 @@ Welcome to the Dungeons And Dragons Helper!
 
 This app is a step by step guide for players wanting to learn how to create a character for DnD. By following the instructions on each page, players can experience the full chacacter creation experience. At the end of the app, the player will have a printable character sheet that they can use for future gameplay and will also be able to search for this character later using the search bar in the homepage.
 
-### Table of Contents\n
+### Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Code](#code)
