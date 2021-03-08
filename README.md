@@ -6,7 +6,7 @@ Welcome to the Dungeons And Dragons Helper!
 
 This app is a step by step guide for players wanting to learn how to create a character for DnD. By following the instructions on each page, players can experience the full chacacter creation experience. At the end of the app, the player will have a printable character sheet that they can use for future gameplay and will also be able to search for this character later using the search bar in the homepage.
 
-### Table of Contents\n
+### Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Code](#code)
@@ -29,7 +29,6 @@ Once the player goes to the webpage, they will be prompted by a start button to 
 The start button connects them to the Character Creation page where they can select their specicies, class, name, and stats with dropdown menus. The proficiencies page is where you will allow you to select proficiencies for your character based off of your class.
 
 !['Creation'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/char-creation.png)
-!['Dropdown Example'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/dropdown-example.png)
 !['Prof'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/prof-page.png)
 
 Once the character has been created, they will be taken to their character sheet which is generated based off of the selections they made.
@@ -77,7 +76,7 @@ The webpage was made possible with the joint effort of:
 
 ## License
 
-Copyright (c) 2021 Kyle Gates, Rebecca How, Ky Taylor, and Mason Miyamoto
+Copyright (c) 2021 Kyle Gates, Rebecca Howe, Ky Taylor, and Mason Miyamoto
         
             Permission is hereby granted, free of charge, to any person obtaining a copy
             of this software and associated documentation files (the "Software"), to deal
