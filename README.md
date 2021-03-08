@@ -29,7 +29,6 @@ Once the player goes to the webpage, they will be prompted by a start button to 
 The start button connects them to the Character Creation page where they can select their specicies, class, name, and stats with dropdown menus. The proficiencies page is where you will allow you to select proficiencies for your character based off of your class.
 
 !['Creation'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/char-creation.png)
-!['Dropdown Example'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/dropdown-example.png)
 !['Prof'](https://github.com/Tapwater808/DungeonsAndDragonsHelper/blob/main/public/assets/images/prof-page.png)
 
 Once the character has been created, they will be taken to their character sheet which is generated based off of the selections they made.
