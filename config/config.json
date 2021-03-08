@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "Serperi0r!5468",
+      "password": "",
       "database": "dnd_DB",
       "host": "127.0.0.1",
       "port": 3306,
@@ -16,11 +16,7 @@
       "dialect": "mysql"
     },
     "production": {
-      "username": "root",
-      "password": "",
-      "database": "database_production",
-      "host": "127.0.0.1",
-      "port": 3306,
+      "use_env_variable": "JAWSDB_URL",
       "dialect": "mysql"
     }
 }
