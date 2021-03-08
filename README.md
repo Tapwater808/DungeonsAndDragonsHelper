@@ -76,7 +76,7 @@ The webpage was made possible with the joint effort of:
 
 ## License
 
-Copyright (c) 2021 Kyle Gates, Rebecca How, Ky Taylor, and Mason Miyamoto
+Copyright (c) 2021 Kyle Gates, Rebecca Howe, Ky Taylor, and Mason Miyamoto
         
             Permission is hereby granted, free of charge, to any person obtaining a copy
             of this software and associated documentation files (the "Software"), to deal
